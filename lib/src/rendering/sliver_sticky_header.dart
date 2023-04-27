@@ -175,7 +175,7 @@ class RenderSliverStickyHeader extends RenderSliver with RenderSliverHelpers {
     } else {
       child!.layout(
         constraints.copyWith(
-          scrollOffset: math.max(0.0, constraints.scrollOffset - headerExtent),
+          scrollOffset: math.max(0.0, constraints.scrollOffset - headerExtent - 400),
           cacheOrigin: math.min(0.0, constraints.cacheOrigin + headerExtent),
           overlap: math.min(headerExtent, constraints.scrollOffset) +
               (sticky ? constraints.overlap : 0),
